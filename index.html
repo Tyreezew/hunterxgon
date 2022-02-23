@@ -8,6 +8,32 @@
     <title>Weather Daashboard</title>
 </head>
 <body>
+<header class = "container-fluid bg-dark text-white text-center p-2">
+    <h1> Weather Dashboard </h1>
+</header>
+<div class = "container-fluid">
+    <div class = "row col-lg-3 pb-3">
+    <form class = "border p-2 search-column" id="search-city">
+        <h4>Search for a City:</h4>
+        <input class = "form-input" id="city" type="text" placeholder="Chicago" />
+        <button class = "btn btn-primary" type = "submit">Search</button>
+        </form>
+<div class = "previous-search border" id="previous-search-button">
+<div class = "row col-lg-9 pb-3" id = "current-forecast">
+    <h2 id ="city-searched"></h2>
+    <div class ="list-group" id = "current-weather"></div>
+    </div>
+ </div>
+ <div class = "row" id = "five-day-forecast"></div>
+    <h2 class = "col-12" id = "day-forecast"></h2>
+    <div class = "d-flex" id = "five-day-container"></div>
+    </div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
+<script src="./assets/js/script.js"></script>
+    
 
 
 
