@@ -1,4 +1,4 @@
-let citites = [];
+let cities = [];
 
 let citySearch = document.querySelector("#search-city");
 let cityInput = document.querySelector("#city");
@@ -20,7 +20,7 @@ let formSubmitHandler = function(event){
         alert ("Please enter a City");
     }
     saveSearch();
-    pastSearch(city);
+    previousSearch(city);
 }
 let saveSearch = function() {
     localStorage.setItem("cities", JSON.stringify(cities));
