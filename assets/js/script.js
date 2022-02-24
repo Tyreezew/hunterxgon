@@ -102,7 +102,7 @@ let displayUvIndex = function(index){
 }
 
 let get5Day = function(city){
-    let apiKey = "844421298d794574c100e3409cee"
+    let apiKey = "844421298d794574c100e3409cee0499"
     let apiUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&units=imperial&appid=${apiKey}`
 
     fetch(apiUrl)
@@ -115,7 +115,7 @@ let get5Day = function(city){
 
 let display5Day = function(weather){
     forecastContainer.textContent = '';
-    dayForecast.textContent = " Five- Day Forecast";
+    dayForecast.textContent = " Five - Day Forecast";
 
     let forecast = weather.list;
         for(let i =5; i < forecast.length; i=i+8){
@@ -143,7 +143,7 @@ let display5Day = function(weather){
 
     let forecastHumidEl = document.createElement("span");
     forecastHumidEl.classList = "card-body text-center";
-    forecastHumidl.textContent = dailyForecast.main.humidity + " %";
+    forecastHumidEl.textContent = dailyForecast.main.humidity + " %";
 
     forecastEl.appendChild(forecastHumidEl);
 
