@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/style.css" />
     <title>Weather Daashboard</title>
 </head>
@@ -12,19 +13,20 @@
     <h1> Weather Dashboard </h1>
 </header>
 <div class = "container-fluid">
-    <div class = "row col-lg-3 pb-3">
-    <form class = "border p-2 search-column" id="search-city">
+    <div class = "row col-md-3 pb-3 search-column">
+    <form class = "border p-2" id="search-city">
         <h4>Search for a City:</h4>
         <input class = "form-input" id="city" type="text" placeholder="Chicago" />
         <button class = "btn btn-primary" type = "submit">Search</button>
         </form>
 <div class = "previous-search border" id="previous-search-button">
-<div class = "row col-lg-9 pb-3" id = "current-forecast">
+<div class = "row col-lg-9 pb-3" id = "current-forecast"> </div>
+    <div class = "col 12">
     <h2 id ="city-searched"></h2>
     <div class ="list-group" id = "current-weather"></div>
     </div>
  </div>
- <div class = "row" id = "five-day-forecast"></div>
+ <div class = "row border" id = "five-day-forecast"></div>
     <h2 class = "col-12" id = "day-forecast"></h2>
     <div class = "d-flex" id = "five-day-container"></div>
     </div>
