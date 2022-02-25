@@ -13,15 +13,15 @@
     <h1> Weather Dashboard </h1>
 </header>
 <div class = "container-fluid">
-    <div class = "row col-md-3 pb-3 search-column">
-    <form class = "border p-2" id="search-city">
+    <div class = "row col-lg-4 col-md-4 pb-3 search-column" style="max-width: 1400px">
+    <form class = "p-2" id="search-city">
         <h4>Search for a City:</h4>
         <input class = "form-input" id="city" type="text" placeholder="Chicago" />
-        <button class = "btn btn-primary" type = "submit">Search</button>
+        <button class = "btn btn-primary border-bottom" type = "submit">Search</button>
         </form>
-<div class = "previous-search border" id="previous-search-button">
-<div class = "row col-lg-9 pb-3" id = "current-forecast"> </div>
-    <div class = "col 12">
+<div class = "previous-search d-flex" id="previous-search-button"></div>
+<div class = "row col-lg-8 pb-3" id = "current-forecast"> </div>
+    <div class = "col-12">
     <h2 id ="city-searched"></h2>
     <div class ="list-group" id = "current-weather"></div>
     </div>

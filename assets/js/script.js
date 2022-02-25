@@ -115,7 +115,7 @@ let get5Day = function(city){
 
 let display5Day = function(weather){
     forecastContainer.textContent = '';
-    dayForecast.textContent = " Five - Day Forecast";
+    dayForecast.textContent = " Five-Day Forecast";
 
     let forecast = weather.list;
         for(let i =5; i < forecast.length; i=i+8){
@@ -138,12 +138,17 @@ let display5Day = function(weather){
 
     let forecastTempEl = document.createElement("span");
     forecastTempEl.classList = "card-body text-center";
-    forecastTempEl.textContent = dailyForecast.main.temp + " °F";
+    forecastTempEl.textContent = "Temperature: " + dailyForecast.main.temp + " °F";
     forecastEl.appendChild(forecastTempEl);
+
+    let forecastWindSpeedEl = document.createElement("span");
+    forecastWindSpeedEl.classList = "card-body text-center";
+    forecastWindSpeedEl.textContent = "Wind Speed: " + dailyForecast.wind.speed + " MPH"
+    forecastEl.appendChild(forecastWindSpeedEl);
 
     let forecastHumidEl = document.createElement("span");
     forecastHumidEl.classList = "card-body text-center";
-    forecastHumidEl.textContent = dailyForecast.main.humidity + " %";
+    forecastHumidEl.textContent = "Humidity: " + dailyForecast.main.humidity + " %";
 
     forecastEl.appendChild(forecastHumidEl);
 
@@ -153,13 +158,13 @@ let display5Day = function(weather){
 
 let previousSearch = function(previousSearch){
 
-    previousSearchEl = document.createElement("button");
+    let previousSearchEl = document.createElement("button");
     previousSearchEl.textContent = previousSearch;
-    previousSearchEl.classList = "d-flex w-100 btn-light border p-2"
+    previousSearchEl.classList = " btn-light p-2"
     previousSearchEl.setAttribute("data-city", previousSearch)
     previousSearchEl.setAttribute("type", "submit");
 
-    previousSearchButton.prepend(previousSearchEl);
+    previousSearchButton.append(previousSearchEl);
 }
 let previousSearchHandler = function(event){
     let city = event.target.getAttribute("data-city")
