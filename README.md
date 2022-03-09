@@ -15,9 +15,7 @@ SO THAT I can plan a trip accordingly
 
 # Usage
 Insert the city you would like to see the weather for and receive the dispalyed results. You can click on cities in the history section to obtain their weather data again.
-![Screen Shot 2022-03-08 at 8 42 19 PM](https://user-images.githubusercontent.com/43646678/157362437-231fa31a-f218-422a-aac0-871603a4ea92.png)
-
-
+![Screen Shot 2022-03-08 at 8 44 56 PM](https://user-images.githubusercontent.com/43646678/157362724-573f2b21-0b0d-4118-be55-461667d700a6.png)
 
 # Contributors
 Tyreezew
